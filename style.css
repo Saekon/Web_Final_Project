@@ -4,14 +4,20 @@
 
 header {
     display: flex;
-    background-color: gray;
     justify-content: space-between;
+    border: solid 7px green;
 }
 
 nav {
 }
 
 ul {
+    font-size: 30px;
     list-style-type: none;
     display: flex;
+}
+
+li {
+    color: green;
+    margin: 4px;
 }
