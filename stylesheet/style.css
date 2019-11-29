@@ -1,10 +1,10 @@
-body{
+body {
     margin: 0;
     background-color: lightgreen;
     min-width: 700px;
     font-family: "Arial", Times, Sans-serif;
 }
-main{
+main {
     background-image: url("Images/GI_Market_food_waste.jpg");
     /*24.11.2019, commons.wikimedia.org, https://upload.wikimedia.org/wikipedia/commons/3/31/GI_Market_food_waste.jpg*/
     max-width: 1600px;
@@ -14,127 +14,117 @@ main{
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    
 }
 
-.nav{
+.nav {
     display: flex;
     border: solid;
     border-width: 7px 7px 7px 7px;
     border-color: green;
     justify-content: space-between;
     background-color: white;
-    
-
 }
-.nav img{
+.nav img {
     margin-bottom: 0px;
 }
-a{
+a {
     text-decoration: none;
     color: green;
     font-size: 30px;
 }
-a:hover{
+a:hover {
     text-decoration: underline;
 }
-.Nav_logo{
-    flex:1;
-    order:1;
+.Nav_logo {
+    flex: 1;
+    order: 1;
     margin-right: 50px;
     margin-left: 24px;
 }
 
- .Nav_text1{
-     flex:8;
-     order:2;
-     margin-top:auto;
-     margin-bottom: auto;
-     
-  }
-.Nav_text2{
-    flex:10;
-    order:3;
-    margin-top:auto;
+.Nav_text1 {
+    flex: 8;
+    order: 2;
+    margin-top: auto;
     margin-bottom: auto;
-  }
-.Nav_text3{
-    flex:10;
-    order:4;
-    margin-top:auto;
-    margin-bottom: auto;
-  }
-.Nav_text4{
-    flex:11;
-    order:5;
-    margin-top:auto;
-    margin-bottom: auto;
-     
-  }
-.Nav_text5{
-    flex:10;
-    order:6;
-    margin-top:auto;
-    margin-bottom: auto;
-     
 }
-.container1{
+.Nav_text2 {
+    flex: 10;
+    order: 3;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.Nav_text3 {
+    flex: 10;
+    order: 4;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.Nav_text4 {
+    flex: 11;
+    order: 5;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.Nav_text5 {
+    flex: 10;
+    order: 6;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.container1 {
     display: flex;
 }
-.container2{
+.container2 {
     display: flex;
 }
-.box1{
+.box1 {
     margin-top: 100px;
-     border: solid;
+    border: solid;
     border-width: 7px 7px 7px 7px;
     border-radius: 10px;
     border-color: green;
-    margin-right:auto;
+    margin-right: auto;
     margin-left: auto;
     background-color: white;
     color: black;
     width: 50%;
-    
 }
-.logo{
+.logo {
     margin-bottom: auto;
     margin-top: auto;
     margin-top: 50px;
-    
 }
-.box2{
+.box2 {
     border: solid;
     border-width: 7px 7px 7px 7px;
     border-radius: 10px;
     border-color: green;
     margin: 25px;
-    flex:1;
+    flex: 1;
     background-color: white;
     color: black;
     margin-top: 75px;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 70px;
-    
 }
-h2{
+h2 {
     font-size: 40px;
     text-align: center;
 }
-h4{
+h4 {
     margin: 20px;
     font-size: 17px;
 }
-button{
-   
+button {
     height: 55px;
     width: 110px;
     border-radius: 10px;
     background-color: lightgreen;
-    margin-left : auto;
+    margin-left: auto;
     margin-right: auto;
     font-weight: 800;
     border: solid;
@@ -146,45 +136,98 @@ button{
     position: relative;
     margin-left: 20px;
     margin-top: 20px;
-    
-    
 }
-button:hover{
+button:hover {
     background-color: green;
     color: white;
     border-color: black;
-    
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#divText3 {
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+#divImg3 {
+    width: 40%;
+    padding-bottom: 20px;
+}
+
+#divImg3 img {
+    width: 40%;
+    height: 70%;
+}
+
+#divText {
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+#text {
+    font-size: 30px;
 }
 @media only screen and (max-width: 1024px) {
-    
-    .container2{
+    #divText3 {
+        width: 100%;
+    }
+
+    #divImg3 img {
+        width: 20%;
+    }
+
+    #divImg3 {
+        width: 100%;
+    }
+
+    #divText {
+        width: 100%;
+    }
+
+    .container2 {
         flex-direction: column;
     }
-    h1{
+    h1 {
         font-size: 45px;
-        
     }
-    h2{
-         font-size: 20px;
-        
+    h2 {
+        font-size: 20px;
     }
-    .box2{
+    .box2 {
         margin-right: 150px;
         margin-left: 150px;
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    .box1{
+    .box1 {
         margin-bottom: 100px;
     }
-    .nav img{
+    .nav img {
         width: 75px;
     }
-    a{
+    a {
         font-size: 25px;
     }
-    button{
+    button {
         margin-bottom: 20px;
     }
 }
-    
+
+@media only screen and (max-width: 900px) {
+    #text {
+        font-size: 20px;
+    }
+}
