@@ -1,159 +1,63 @@
-.container1 {
+/* Css reset */
+* {
+    margin: 0;
+}
+/* NavBar */
+header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
 }
-.container2 {
-    display: flex;
-}
-.box1 {
-    margin-top: 100px;
-    border: solid;
-    border-width: 7px 7px 7px 7px;
-    border-radius: 10px;
-    border-color: green;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: white;
-    color: black;
-    width: 50%;
-}
+
 .logo {
-    margin-bottom: auto;
-    margin-top: auto;
-    margin-top: 50px;
-}
-.box2 {
-    border: solid;
-    border-width: 7px 7px 7px 7px;
-    border-radius: 10px;
-    border-color: green;
-    margin: 25px;
-    flex: 1;
-    background-color: white;
-    color: black;
-    margin-top: 75px;
+    max-height: 72px;
 }
 
-h1 {
-    text-align: center;
-    font-size: 70px;
-}
-h2 {
-    font-size: 40px;
-    text-align: center;
-}
-h4 {
-    margin: 20px;
-    font-size: 17px;
-}
-button {
-    height: 55px;
-    width: 110px;
-    border-radius: 10px;
-    background-color: lightgreen;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 800;
-    border: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: green;
-    color: black;
-    font-size: 18px;
-    cursor: pointer;
-    position: relative;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-button:hover {
-    background-color: green;
-    color: white;
-    border-color: black;
+nav, ul {
+    display: flex;
 }
 
-#body {
+.nav-item {
+    list-style-type: none;
+    margin: 4px;
+}
+
+nav, a {
+    text-decoration: none;
+    color: black;
+}
+
+/* global? */
+
+/* main {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
+} */
 
-#row {
+section {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    margin: 4px;
 }
 
-#divText3 {
-    width: 30%;
-    padding-bottom: 20px;
+div {
+    margin: 4px;
 }
 
-#divImg3 {
-    width: 40%;
-    padding-bottom: 20px;
+/* Problem */
+
+.big-picture {
+    max-height: 300px;
+    width: 100%;
 }
 
-#divImg3 img {
-    width: 40%;
-    height: 70%;
-}
 
-#divText {
-    padding-bottom: 20px;
-    width: 50%;
-}
+/* Solution */ 
 
-#text {
-    font-size: 30px;
-}
-@media only screen and (max-width: 1024px) {
-    #divText3 {
-        width: 100%;
-    }
 
-    #divImg3 img {
-        width: 20%;
-    }
-
-    #divImg3 {
-        width: 100%;
-    }
-
-    #divText {
-        width: 100%;
-    }
-
-    .container2 {
-        flex-direction: column;
-    }
-    h1 {
-        font-size: 45px;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    .box2 {
-        margin-right: 150px;
-        margin-left: 150px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .box1 {
-        margin-bottom: 100px;
-    }
-    .nav img {
-        width: 75px;
-    }
-    a {
-        font-size: 25px;
-    }
-    button {
-        margin-bottom: 20px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    #text {
-        font-size: 20px;
-    }
+/* Sources */
+.sources ul {
+    flex-direction: column;
 }
