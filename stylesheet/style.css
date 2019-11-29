@@ -16,16 +16,24 @@ header {
 
 nav ul {
     display: flex;
+    list-style-type: none;
 }
 
-.nav-item {
-    list-style-type: none;
-    margin: 4px;
+.nav-item {  
 }
 
 nav a {
     text-decoration: none;
+    padding: 36px 16px;
     color: black;
+}
+
+nav .active {
+    /* en type styling her */
+}
+
+nav a:hover {
+    background-color: darkgray;
 }
 
 /* global? */
