@@ -14,7 +14,7 @@ header {
     max-height: 72px;
 }
 
-nav, ul {
+nav ul {
     display: flex;
 }
 
@@ -23,27 +23,19 @@ nav, ul {
     margin: 4px;
 }
 
-nav, a {
+nav a {
     text-decoration: none;
     color: black;
 }
 
 /* global? */
 
-/* main {
-    display: flex;
-    flex-direction: column;
-} */
-
 section {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-around; */
-    margin: 4px;
-}
-
-div {
-    margin: 4px;
+    justify-content: center;
+    margin: 8px 0;
+    width: 100%;
 }
 
 /* Problem */
@@ -52,12 +44,54 @@ div {
     max-height: 300px;
     width: 100%;
 }
+.problem-text {
+    width: 35%;
+    margin: 8px;
+}
+.problem-question {
+    border: solid green 4px;
+}
+.problem-person {
+    width: 30%;
+    text-align: center;
+    margin: 8px;
+}
+.problem-solution {
+    width: 40%;
+    border: solid gray 4px;
+}
 
+/* Solution */
+.solution-text {
+    width: 35%;
+    margin: 8px;
+}
+.solution-img {
+}
 
-/* Solution */ 
+/* Prototype */
+.prototype-text {
+    width: 45%;
+    margin: 8px;
+}
 
+.prototype-img {
+}
 
 /* Sources */
 .sources ul {
     flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .problem-text,
+    .prototype-text,
+    .solution-text,
+    .problem-person {
+        width: 100%;
+    }
 }
