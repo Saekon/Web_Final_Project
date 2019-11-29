@@ -61,6 +61,11 @@ section {
     border: solid gray 4px;
 }
 
+.problem-img {
+    max-height: 350px;
+    max-width: 250px;
+}
+
 /* Solution */
 .solution-text {
     width: 35%;
