@@ -70,6 +70,10 @@ h2, p{
     padding: 4px;
     border: solid gray 4px;
 }
+
+#home-sect{
+    padding-top: 15%;
+}
 /* Problem */
 
 .big-picture {
@@ -182,5 +186,9 @@ h2, p{
         /* flex-direction: column;
         margin: 20px; */
         /* Må gjøres responsive */
+    }
+    
+    #home-sect{
+        padding-top: 0px;
     }
 }
