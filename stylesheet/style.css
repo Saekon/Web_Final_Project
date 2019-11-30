@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(rgb(150,150,150), rgb(125,125,125));
+    background-image: white;
 }
 
 .logo {
@@ -26,7 +26,7 @@ nav ul {
 nav a {
     text-decoration: none;
     font-size: 25px;
-    padding: 29px 16px;
+    padding: 25px 16px;
     color: black;
 }
 
@@ -43,7 +43,7 @@ nav a:hover {
 section {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; /* Eller center? */
+    justify-content: center; /* Eller center? */
     margin: 8px 0;
     width: 100%;
 }
@@ -67,7 +67,8 @@ section {
     margin: 8px;
 }
 .problem-question {
-    border: solid green 4px;
+    padding: 4px;
+    border: solid gray 2px;
 }
 .problem-person {
     width: 30%;
@@ -75,7 +76,9 @@ section {
     margin: 8px;
 }
 .problem-solution {
-    width: 40%;
+    width: 35%;
+    padding: 8px;
+    text-align: center;
     border: solid gray 4px;
 }
 
