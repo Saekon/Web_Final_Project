@@ -17,27 +17,27 @@ header {
     max-height: 72px;
 }
 
-nav ul {
+.nav-desktop ul {
     display: flex;
     list-style-type: none;
 }
-
-.nav-item {  
+.nav-mobile {
+    display: none;
 }
 
-nav a {
+.nav-desktop a {
     text-decoration: none;
     font-size: 25px;
     padding: 25px 16px;
     color: black;
 }
 
-nav .active {
+.nav-desktop .active {
     /* en type styling her ?*/
     background-color: gray;
 }
 
-nav a:hover {
+.nav-desktop a:hover {
     background-color: darkgray;
 }
 
@@ -124,6 +124,27 @@ section {
 }
 
 @media only screen and (max-width: 650px) {
+    .nav-desktop {
+        display: none;
+        
+    }
+    .nav-mobile {
+        display: flex;
+    }
+    header {
+        flex-direction: column;
+        
+    }
+    .nav-mobile ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
+    .nav-mobile a {
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
     section {
         flex-direction: column;
         align-items: center;
