@@ -129,6 +129,9 @@ h2, p{
 }
 
 .prototype-img {
+    margin-top: 40px;;
+    max-width: 250px;
+    max-height: 4000px;
 }
 
 /* Sources */
