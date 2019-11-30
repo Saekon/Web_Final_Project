@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: gray;
+    background-color: white;
 }
 
 .logo {
@@ -25,7 +25,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    padding: 36px 16px;
+    padding: 30px 16px;
     color: black;
 }
 
@@ -42,11 +42,19 @@ nav a:hover {
 section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around; /* Eller center? */
     margin: 8px 0;
     width: 100%;
 }
 
+/* Home */
+.home-text {
+    text-align: center;
+    width: 30%;
+    margin: 12px;
+    padding: 4px;
+    border: solid gray 4px;
+}
 /* Problem */
 
 .big-picture {
@@ -74,6 +82,9 @@ section {
     max-height: 350px;
     max-width: 250px;
 }
+.problem-solution-img {
+    max-height: 300px;
+}
 
 /* Solution */
 .solution-text {
@@ -81,6 +92,7 @@ section {
     margin: 8px;
 }
 .solution-img {
+    
 }
 
 /* Prototype */
@@ -102,6 +114,7 @@ section {
         flex-direction: column;
         align-items: center;
     }
+    .home-text,
     .problem-text,
     .prototype-text,
     .solution-text,
