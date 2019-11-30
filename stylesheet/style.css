@@ -51,6 +51,16 @@ section {
     margin: 8px 0;
     width: 100%;
 }
+h2 {
+    font-weight: 700;
+}
+p {
+    font-weight: 400;
+}
+h2, p{
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
 
 /* Home */
 .home-text {
@@ -89,15 +99,17 @@ section {
     padding: 8px;
     text-align: center;
     border: solid gray 4px;
+    font-weight: 300;
+}
+.problem-solution-img {
+    max-height: 300px;
 }
 
 .problem-img {
     max-height: 350px;
     max-width: 250px;
 }
-.problem-solution-img {
-    max-height: 300px;
-}
+
 
 /* Solution */
 .solution-text {
@@ -146,6 +158,10 @@ section {
         font-size: 25px;
         color: black;
     }
+    .nav-mobile .active {
+        /* en type styling her ?*/
+        background-color: gray;
+    }
     section {
         flex-direction: column;
         align-items: center;
@@ -154,8 +170,10 @@ section {
     .problem-text,
     .prototype-text,
     .solution-text,
-    .problem-person {
-        width: 100%;
+    .problem-person,
+    .problem-question,
+    .problem-solution {
+        width: 90%;
     }
     nav ul {
         /* flex-direction: column;
